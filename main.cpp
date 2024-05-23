@@ -3,10 +3,10 @@
 template<class T>
 void ordenarInsercion(T v[],int a,int b){
   for(int i = a; i<=b; i++){
-    int key = v[i];
+    T key = v[i];
     int j = i - 1;
 
-    while(j>=a-1&&v[j]>key){
+    while(j>=a&&v[j]>key){
       v[j+1] = v[j];
       j = j - 1;
     }
